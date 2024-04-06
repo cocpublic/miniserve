@@ -53,7 +53,7 @@ pub fn page(
     html! {
         (DOCTYPE)
         html {
-            (page_header(&title_path, conf.file_upload, &conf.favicon_route, &conf.css_route))
+            (page_header(&title_path, false, &conf.favicon_route, &conf.css_route))
 
             body #drop-container
             {
